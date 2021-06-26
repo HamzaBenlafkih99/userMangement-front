@@ -1,0 +1,29 @@
+<div *ngIf="error" class="col-md-3">
+  <div class="alert alert-danger">
+    Access Not Authorize!
+ </div>
+</div>
+
+<div class="middle">
+  <a class="btn" href="/">
+   <span>Home</span>
+    <i class="material-icons">home</i>
+  </a>
+  <a class="btn" (click)="redirectAdmin()">
+   <span>Gestion</span>
+    <i class="material-icons">settings</i>
+  </a>
+  <a class="btn" href="/login">
+    <span>Sign in</span>
+     <i class="material-icons">face</i>
+   </a>
+  <a class="btn" href="/register">
+    <span>Sign Up</span>
+     <i class="material-icons">login</i>
+   </a>
+   <a class="btn" (click)="logout()">
+    <span>Logout</span>
+     <i class="material-icons">logout</i>
+   </a>
+  
+</div>
